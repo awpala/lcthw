@@ -18,7 +18,7 @@ struct tagbstring expect3 = bsStatic("THE VALUE 3");
 static int traverse_good_cb(HashmapNode *);
 static int traverse_fail_cb(HashmapNode *);
 
-char* test_create();
+char *test_create();
 char *test_destroy();
 char *test_get_set();
 char *test_traverse();
