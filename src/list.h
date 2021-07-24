@@ -18,25 +18,24 @@ typedef struct List {
   ListNode *last;
 } List;
 
+#define List_count(A) ((A)->count)
+#define List_first(A) ((A)->first != NULL ? (A)->first->value : NULL)
+#define List_last(A)  ((A)->last != NULL ? (A)->last->value : NULL)
+
+#define LIST_FOREACH(L, S, M, V)\
+  ListNode *_node = NULL;\
+  ListNode *V = NULL;\
+  for(V = _node = L->S; _node != NULL; V = _node = _node->M)
+
 List *List_create();
 void List_destroy(List *);
 void List_clear(List *);
 void List_clear_destroy(List *);
-
-#define List_count(A) ((A)->count)
-#define List_first(A) ((A)->first != NULL ? (A)->first->value : NULL)
-#define List_last(A) ((A)->last != NULL ? (A)->last->value : NULL)
-
 void List_push(List *, void *);
 void *List_pop(List *);
-
 void List_unshift(List *, void *);
 void *List_shift(List *);
-
 void *List_remove(List *, ListNode *);
-
-#define LIST_FOREACH(L, S, M, V) ListNode *_node = NULL; ListNode *V = NULL;\
-        for(V = _node = L->S; _node != NULL; V = _node = _node->M)
 
 List *List_create() {
   return (List *)calloc(1, sizeof(List));
