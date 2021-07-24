@@ -1,8 +1,8 @@
 #ifndef __list_tests_h__
 #define __list_tests_h__
 
-#include "minunit.h"
-#include "list.h"
+#include "utils_minunit.h"
+#include "dsa_list.h"
 #include <assert.h>
 
 static List *list = NULL;

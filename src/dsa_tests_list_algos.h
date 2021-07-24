@@ -1,8 +1,8 @@
 #ifndef __list_algos_tests_h__
 #define __list_algos_tests_h__
 
-#include "minunit.h"
-#include "list_algos.h"
+#include "utils_minunit.h"
+#include "dsa_list_algos.h"
 #include <assert.h>
 #include <string.h>
 

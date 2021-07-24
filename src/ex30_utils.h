@@ -1,7 +1,7 @@
 #ifndef __ex30_utils_h__
 #define __ex30_utils_h__
 
-#include "minunit.h"
+#include "utils_minunit.h"
 
 char *test_dlopen();
 char *test_functions();

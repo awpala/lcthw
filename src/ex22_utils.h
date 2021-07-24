@@ -2,7 +2,7 @@
 #define __ex22_utils_h__
 
 #include <stdio.h>
-#include "dbg.h"
+#include "utils_dbg.h"
 
 // makes THE_SIZE available to other .c files
 extern int THE_SIZE;

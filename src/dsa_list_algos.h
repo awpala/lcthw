@@ -1,7 +1,7 @@
 #ifndef __list_algos_h__
 #define __list_algos_h__
 
-#include "list.h"
+#include "dsa_list.h"
 
 typedef int (*List_compare)(const void *, const void *);
 

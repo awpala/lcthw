@@ -2,7 +2,7 @@
 #ifndef __minunit_h__
 #define __minunit_h__
 
-#include "dbg.h"
+#include "utils_dbg.h"
 #include <stdio.h>
 #include <stdlib.h>
 
